@@ -1376,3 +1376,44 @@ ul {
     }
 
 }
+
+/* ==========================================
+   FEATURED PROJECT IMAGE
+========================================== */
+
+.project-image {
+
+    margin: -2rem -2rem 1.5rem;
+
+}
+
+.project-image-placeholder {
+
+    height: 180px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(79,142,247,.20),
+            rgba(11,16,32,.90)
+        );
+
+    color: var(--primary-light);
+
+    font-size: 1.1rem;
+
+    font-weight: 700;
+
+    letter-spacing: .05em;
+
+    border-bottom: 1px solid var(--border);
+
+    border-radius: 18px 18px 0 0;
+
+}
