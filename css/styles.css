@@ -1943,3 +1943,226 @@ p {
     }
 
 }
+
+/* ==========================================================
+   CASE STUDY REFINEMENT
+   Moodle Case Study
+========================================================== */
+
+.case-study-overview-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.case-study-overview-card {
+    padding: 1.25rem;
+    background: rgba(255,255,255,.035);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+}
+
+.case-study-overview-card span {
+    display: block;
+    color: var(--primary-light);
+    font-size: .7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    margin-bottom: .5rem;
+}
+
+.case-study-overview-card strong {
+    display: block;
+    font-size: .85rem;
+    line-height: 1.45;
+}
+
+
+/* =========================================
+   CONTRIBUTION LIST
+========================================= */
+
+.contribution-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.contribution-item {
+    display: grid;
+    grid-template-columns: 3rem 1fr;
+    gap: 1rem;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.contribution-item:first-child {
+    padding-top: 0;
+}
+
+.contribution-item:last-child {
+    border-bottom: none;
+}
+
+.contribution-item > span {
+    color: var(--accent);
+    font-size: .75rem;
+    font-weight: 800;
+    letter-spacing: .08em;
+}
+
+.contribution-item h3 {
+    font-size: 1rem;
+    margin-bottom: .3rem;
+}
+
+.contribution-item p {
+    color: var(--muted);
+    font-size: .85rem;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   IMPACT
+========================================= */
+
+.impact-section {
+    align-items: start;
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.impact-card {
+    padding: 1.5rem;
+    border-left: 2px solid var(--accent);
+    background: rgba(255,255,255,.025);
+}
+
+.impact-card strong {
+    display: block;
+    color: var(--accent);
+    font-size: 2.4rem;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: .65rem;
+}
+
+.impact-card span {
+    display: block;
+    color: var(--muted);
+    font-size: .78rem;
+    line-height: 1.55;
+}
+
+
+/* =========================================
+   LEADERSHIP TAKEAWAY
+========================================= */
+
+.case-study-leadership-content {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.case-study-leadership-content h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.1;
+    margin-bottom: 1.25rem;
+}
+
+.case-study-leadership-content p {
+    max-width: 720px;
+    margin: 0 auto;
+    color: var(--muted);
+}
+
+
+/* =========================================
+   NEXT CASE STUDY
+========================================= */
+
+.case-study-next-card {
+    display: block;
+    padding: 2.5rem;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(79,142,247,.12),
+            rgba(255,255,255,.025)
+        );
+    border: 1px solid rgba(106,163,255,.18);
+    border-radius: var(--radius);
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+}
+
+.case-study-next-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(106,163,255,.4);
+    box-shadow: var(--shadow-lg);
+}
+
+.case-study-next-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.case-study-next-content h2 {
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    margin-bottom: .5rem;
+}
+
+.case-study-next-content p {
+    color: var(--muted);
+    max-width: 600px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .case-study-overview-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .impact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .case-study-next-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .case-study-overview-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contribution-item {
+        grid-template-columns: 2.25rem 1fr;
+    }
+
+    .case-study-next-card {
+        padding: 1.75rem;
+    }
+
+}
