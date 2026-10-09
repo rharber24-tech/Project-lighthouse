@@ -28,17 +28,18 @@
     <link rel="stylesheet" href="css/responsive.css" />
 
     <style>
-        /* Recognition section: intentionally self-contained so it works with the existing site styles. */
-        .recognition { padding: 5rem 0; background: #f7f9fc; }
+        /* Recognition section uses the same dark palette and inherited typography as the rest of Project Lighthouse. */
+        .recognition { padding: 5rem 0; background: #0b1020; color: #f4f6fb; font-family: inherit; }
+        .recognition .container { font-family: inherit; }
         .recognition-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; margin-top: 2rem; }
-        .recognition-card { height: 100%; padding: 1.75rem; border: 1px solid #e1e7f0; border-radius: 1rem; background: #fff; box-shadow: 0 8px 24px rgba(11, 16, 32, .05); }
-        .recognition-card .recognition-icon { display: inline-flex; align-items: center; justify-content: center; width: 2.75rem; height: 2.75rem; margin-bottom: 1rem; border-radius: .75rem; color: #4f8ef7; background: #edf4ff; font-size: 1.2rem; }
-        .recognition-card h3 { margin: 0 0 .5rem; }
-        .recognition-card p { margin: .4rem 0 0; line-height: 1.65; }
-        .recognition-kicker { color: #4f8ef7; font-size: .78rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; }
-        .recognition-quote { margin-top: 1.5rem; padding: 1.5rem 1.75rem; border-left: 4px solid #f2a65a; border-radius: .5rem; background: #fff; }
-        .recognition-quote blockquote { margin: 0; font-size: 1.1rem; line-height: 1.7; font-weight: 500; }
-        .recognition-quote p { margin: .8rem 0 0; color: #5d6678; font-size: .9rem; }
+        .recognition-card { height: 100%; padding: 1.75rem; border: 1px solid rgba(255,255,255,.10); border-radius: .75rem; background: #141c2f; color: inherit; box-shadow: 0 10px 28px rgba(0,0,0,.18); }
+        .recognition-card .recognition-icon { display: inline-flex; align-items: center; justify-content: center; width: 2.75rem; height: 2.75rem; margin-bottom: 1rem; border-radius: .65rem; color: #4f8ef7; background: rgba(79,142,247,.13); font-size: 1.2rem; }
+        .recognition-card h3 { margin: 0 0 .5rem; color: inherit; font: inherit; font-size: 1.25rem; font-weight: 700; }
+        .recognition-card p { margin: .4rem 0 0; color: inherit; line-height: 1.65; }
+        .recognition-card .recognition-kicker { color: #7eabff; font-size: .78rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; }
+        .recognition-quote { margin-top: 1.5rem; padding: 1.5rem 1.75rem; border-left: 4px solid #f2a65a; border-radius: .5rem; background: #141c2f; color: #f4f6fb; }
+        .recognition-quote blockquote { margin: 0; color: inherit; font-size: 1.1rem; line-height: 1.7; font-weight: 500; }
+        .recognition-quote p { margin: .8rem 0 0; color: #b8c1d4; font-size: .9rem; }
         @media (max-width: 760px) { .recognition-grid { grid-template-columns: 1fr; } .recognition { padding: 3.5rem 0; } }
     </style>
 </head>
