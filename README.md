@@ -31,7 +31,7 @@ Leading instructional design strategy, project coordination, testing, standardiz
 ### AI-Powered Assessment Innovation
 Exploring how AI can improve assessment workflows while preserving instructional quality, meaningful feedback, human judgment, and the learner experience.
 
-### Interactive Recipe Book Experiences
+### Interactive Experiences
 Defining more than 500 culinary techniques and skills and leading the project from content development and filming through interactive learning design and Moodle implementation.
 
 ### Faculty & Learning Support Ecosystem
@@ -60,7 +60,7 @@ Project Lighthouse is built with:
 - `projects.html` — Featured projects
 - `case-study-moodle.html` — Moodle modernization case study
 - `case-study-ai.html` — AI assessment innovation case study
-- `case-study-recipe.html` — Interactive recipe book case study
+- `case-study-recipe.html` — Interactive learning experiences case study
 - `case-study-faculty-support.html` — Faculty support case study
 - `contact.html` — Contact information
 
